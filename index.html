@@ -7,6 +7,82 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Fork Me on Github -->
+  <a href="https://github.com/bradleybossard/cover-letter-writer"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"
+     data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+
+  <div class=header>
+    <h1>Fauna Config Editor</h1>
+    <hr>
+  </div>
+
+  <div ng-app="myApp" ng-controller="myCtrl" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+					<label for="name">Name</label>
+          <input type="text" name="name" class="form-control" placeholder="Number of config" ng-model="name" ng-change="updateConfig()">
+        </div>
+
+        <div class="form-group">
+					<label for="iterations">Iterations</label>
+          <input type="text" name="iteratons" class="form-control" placeholder="Number of iterations" ng-model="iterations" ng-change="updateConfig()">
+        </div>
+
+        <div class="form-group">
+					<label for="axiom">Axiom</label>
+          <input type="text" name="axiom" class="form-control" placeholder="Axiom" ng-model="axiom" ng-change="updateConfig()">
+        </div>
+<!--
+
+        <div class="form-group">
+					<label for="iterations">Iterations</label>
+          <input type="text" name="iteratons" class="form-control" placeholder="Number of iterations" ng-model="iterations" ng-change="updateConfig()">
+        </div>
+
+        <div class="form-group">
+					<label for="iterations">Iterations</label>
+          <input type="text" name="iteratons" class="form-control" placeholder="Number of iterations" ng-model="iterations" ng-change="updateConfig()">
+        </div>
+
+http://bradleybossard.com/fauna-editor
+
+bradleybossard@instance-1:~/src/pyfauna$ cat grammars/hilbert.json 
+{
+  "name": "hilbert",
+  "iterations": 6,
+  "axiom": "L",
+  "rules": {
+    "L": "c+R[]F-L[]FL-FR+",
+    "R": "-LF+RFR+FL-"
+  },
+  "animation_duration": "10s",
+  "fill_to": "#00cc00",
+  "fill_from": "#cccc00",
+  "fill_duration": "3s",
+  "path": [
+    {
+      "angle": 90,
+      "length": 5,
+      "length_growth": 0,
+      "angle_growth": 0
+    },
+    {
+      "angle": 87.9,
+      "length": 5,
+      "length_growth": 0,
+      "angle_growth": 0
+    }
+  ]
+}
+
+-->
+			</div>
+		</div>
+	</div>
+
+
+
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js" integrity="sha256-6Sr0HqNgUf/p88g6vsl87CrAnNqiOWhjlY6LS8jeWHA=" crossorigin="anonymous"></script>
 

@@ -12,8 +12,12 @@ var app = angular.module('myApp', [])
 				});
   }
 
+  $scope.updateConfig = function() {
+  }
+
   $scope.init = function() {
     $scope.getData();
+    $scope.updateConfig();
   }
 
   $scope.init();

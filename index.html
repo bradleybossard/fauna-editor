@@ -79,12 +79,28 @@ bradleybossard@instance-1:~/src/pyfauna$ cat grammars/hilbert.json
 -->
 			</div>
 		</div>
+
+
+    <div class="row">
+      <div class="form-group">
+        <div class="btn-group pull-right" role="group" aria-label="...">
+          <button type="button" class="btn btn-default btn-xs" data-clipboard-target="#letter">
+              <span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Copy to Clipboard 
+          </button>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea id="letter">{{ displayString }}</textarea>
+      </div>
+    </div>
+
 	</div>
 
 
 
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js" integrity="sha256-6Sr0HqNgUf/p88g6vsl87CrAnNqiOWhjlY6LS8jeWHA=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js" integrity="sha256-YPxFEfHAzLj9n2T+2UXAKGNCRUINk0BexppujiVhRH0=" crossorigin="anonymous"></script>
 
   <script src="script.js"></script>
 

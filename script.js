@@ -16,6 +16,7 @@ var app = angular.module('myApp', [])
   }
 
   $scope.init = function() {
+    new Clipboard('.btn');
     $scope.getData();
     $scope.updateConfig();
   }

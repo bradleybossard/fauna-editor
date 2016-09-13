@@ -1,5 +1,3 @@
-console.log('point1');
-
 var app = angular.module('myApp', [])
 .controller('myCtrl', function($scope, $http) {
 	$scope.getData = function() {
@@ -13,6 +11,12 @@ var app = angular.module('myApp', [])
   }
 
   $scope.updateConfig = function() {
+    var output = {};
+    output.name = $scope.name;
+    output.iterations = $scope.iterations;
+    output.axiom = $scope.axiom;
+    
+    $scope.displayString = JSON.stringify(output, null, 2);
   }
 
   $scope.init = function() {

@@ -33,17 +33,26 @@
 					<label for="axiom">Axiom</label>
           <input type="text" name="axiom" class="form-control" placeholder="Axiom" ng-model="axiom" ng-change="updateConfig()">
         </div>
-<!--
+
+				<!-- Add rules logic here -->
+
         <div class="form-group">
-					<label for="iterations">Iterations</label>
-          <input type="text" name="iteratons" class="form-control" placeholder="Number of iterations" ng-model="iterations" ng-change="updateConfig()">
+					<label for="animation_duration">Animation Duration</label>
+          <input type="number" name="animation_duration" class="form-control" placeholder="Animation duration in seconds" ng-model="animation_duration" ng-change="updateConfig()">
         </div>
 
         <div class="form-group">
-					<label for="iterations">Iterations</label>
-          <input type="text" name="iteratons" class="form-control" placeholder="Number of iterations" ng-model="iterations" ng-change="updateConfig()">
+					<label for="fill_to">Fill To</label>
+          <input type="color" name="fill_to" class="form-control" placeholder="Fill To Color" ng-model="fill_to" ng-change="updateConfig()">
         </div>
 
+        <div class="form-group">
+					<label for="fill_from">Fill From</label>
+          <input type="color" name="fill_from" class="form-control" placeholder="Fill From Color" ng-model="fill_from" ng-change="updateConfig()">
+        </div>
+
+
+<!-- 
 
 bradleybossard@instance-1:~/src/pyfauna$ cat grammars/hilbert.json 
 {

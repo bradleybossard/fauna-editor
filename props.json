@@ -3,6 +3,21 @@
   "fill_from": "#00FF00", 
   "animation_duration": 10,
   "patterns": [
-    { }
+    {"name": "recoil",
+     "axiom": "S",
+     "rules": [
+       {"S": "F>+[F-Y[S]]F)G"},
+       {"Y": "--[|F-F--FY]-"},
+       {"G": "FGF[+F]+Y"}
+      ]
+    },
+    {"name": "triffids",
+     "axiom": "SSS",
+     "rules": [
+       {"S": "[F>[FF-YS]F)G]+"},
+       {"Y": "--[|F-F--FY]-"},
+       {"G": "FGF[+F]+Y"}
+      ]
+    }
   ]
 }
